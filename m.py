@@ -235,8 +235,8 @@ def handle_bgmi(message):
             target = command[1]
             port = int(command[2])  # Convert time to integer
             time = int(command[3])  # Convert port to integer
-            if time > 311:
-                response = "Error: Time interval must be less than 310."
+            if time > 181:
+                response = "Error: Time interval must be less than 180."
             else:
                 record_command_logs(user_id, '/bgmi', target, port, time)
                 log_command(user_id, target, port, time)
@@ -285,7 +285,7 @@ def show_help(message):
 🤖 To See Admin Commands:
 💥 /admincmd : Shows All Admin Commands.
 
-Buy From :- @IPXKING_OWNER
+Buy From :- @IPXKINGYT
 Official Channel :- https://t.me/+6pLYLxgt8QI5ZmFl
 '''
     for handler in bot.message_handlers:
