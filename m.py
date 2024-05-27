@@ -286,7 +286,7 @@ def show_help(message):
 💥 /admincmd : Shows All Admin Commands.
 
 Buy From :- @IPXKINGYT
-Official Channel :- https://t.me/+6pLYLxgt8QI5ZmFl
+Officil contact @IPxKINGYT
 '''
     for handler in bot.message_handlers:
         if hasattr(handler, 'commands'):
@@ -303,7 +303,8 @@ def welcome_start(message):
     user_name = message.from_user.first_name
     response = f'''👋🏻Welcome to Your Home, {user_name}! Feel Free to Explore.
 🤖Try To Run This Command : /help 
-✅Join :- https://t.me/+6pLYLxgt8QI5ZmFl'''
+BOT CREATOR - @IPxKINGYT
+✅DM TO @IPxKINGYT TO BUY DDOS'''
     bot.reply_to(message, response)
 
 @bot.message_handler(commands=['rules'])
